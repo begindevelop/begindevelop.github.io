@@ -1,45 +1,49 @@
-/* Change this file to get your personal Portfolio */
+/* 이 파일을 수정하여 개인 포트폴리오를 만드세요 */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
+// 포트폴리오의 색상을 전역적으로 변경하려면 _globalColor.scss 파일을 수정하세요.
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation"; // 사용자 정의 애니메이션 파일 이름으로 변경
 
-// Splash Screen
+// 시작 화면(Splash Screen)
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // 시작 화면을 비활성화하려면 false로 설정
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000 // 애니메이션 지속 시간(밀리초)
 };
 
-// Summary And Greeting Section
+// 요약 및 인사말 섹션(Summary And Greeting Section)
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true // 정적인 SVG를 사용하려면 false로 설정
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+  username: "문현진",
+  title: (
+    <>
+      안녕하세요, <br />
+      노력하는 문현진입니다
+    </>
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  subTitle: (
+    <>
+      저는 5G 무선망 설계와 Protocol, Physical Resource 분석에 대한 풍부한
+      경험을 바탕으로 무선망의 구축, 설계 및 최적화 작업을 성공적으로 수행해
+      왔습니다. <br />
+    </>
+  ),
+  resumeLink: "https://drive.google.com/file/d/1resume-link",
+  displayGreeting: true // 이 섹션을 숨기려면 false로 설정
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
+  linkedin: "https://myinfo5330.tistory.com/",
   github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  gmail: "eheh0418@naver.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
