@@ -23,8 +23,8 @@ const greeting = {
   username: "문현진",
   title: (
     <>
-      안녕하세요, <br />
-      노력하는 문현진입니다
+      안녕하십니까! <br />
+      성실한 문현진입니다.
     </>
   ),
   subTitle: (
@@ -42,7 +42,7 @@ const greeting = {
 
 const socialMediaLinks = {
   linkedin: "https://myinfo5330.tistory.com/",
-  github: "https://github.com/saadpasta",
+  // github: "https://github.com/saadpasta",
   gmail: "eheh0418@naver.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -52,16 +52,21 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "안녕하세요. 성실과 책임으로 성장하는 문현진입니다.",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    <>
+      {" "}
+      저는 6년간 무선 망 설계, 5G 프로토콜 분석, 성능 최적화 등 다양한
+      프로젝트를 수행하며 전문성을 쌓아왔습니다. <br />
+      또한, 워드, 엑셀, 파워포인트, 포토샵, 프리미어 프로 등 다양한 도구를
+      능숙하게 활용해 업무 효율성을 높이고 완성도 높은 결과물을 만들어냈습니다.{" "}
+      <br />
+      퇴근 후에는 업무 관련 기술뿐만 아니라 Java, Spring Boot, Oracle SQL,
+      React, HTML5, CSS 등 개발 기술을 포함한 다양한 역량을 꾸준히 계발하며
+      스스로를 발전시켜 왔습니다. <br />
+      어떠한 일을 맡더라도 책임감을 가지고 최선의 결과를 만들기 위해 노력하는
+      자세로, 새로운 환경에서도 성과를 창출하며 성장하는 인재가 되겠습니다.{" "}
+    </>
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -69,9 +74,26 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Communication",
+      fontAwesomeClassname: "fas fa-satellite-dish"
     },
+    {
+      skillName: "Wired Network",
+      fontAwesomeClassname: "fas fa-network-wired"
+    },
+    {
+      skillName: "Signal Strength",
+      fontAwesomeClassname: "fas fa-signal"
+    },
+    {
+      skillName: "Mobile Communication",
+      fontAwesomeClassname: "fas fa-mobile-alt"
+    },
+    {
+      skillName: "Wi-Fi",
+      fontAwesomeClassname: "fas fa-wifi"
+    },
+
     {
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt"
@@ -91,30 +113,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "docker",
