@@ -172,7 +172,8 @@ const educationInfo = {
   schools: [
     {
       schoolName: "무선 망 설계 및 최적화 경력",
-      logo: require("./assets/images/design.png"),
+      // logo: require("./assets/images/design.png"),
+      logo: require("./assets/images/Design2.png"),
       subHeader: "2019 - 2024년 (6년)",
       desc: "무선 망 설계 프로그램(Ranplan)을 활용한 무선 망 설계",
       descBullets: [
@@ -187,7 +188,9 @@ const educationInfo = {
     },
     {
       schoolName: "5G 및 NB-IoT 통신 프로토콜 분석 경력",
-      logo: require("./assets/images/NetworkAnalyzer.png"),
+      // logo: require("./assets/images/NetworkAnalyzer.png"),
+      logo: require("./assets/images/NetworkAnalyzer2.png"),
+
       subHeader: "2019년 - 2021년 (3년)",
       desc: "무선 분석 계측기(WaveJudge)를 활용한 5G 및 NB-IoT 통신 프로토콜 분석 및 성능 최적화 프로젝트 수행",
       descBullets: [
@@ -210,7 +213,9 @@ const educationInfo = {
     },
     {
       schoolName: "추가 경력 및 프로젝트",
-      logo: require("./assets/images/5G.png"),
+      // logo: require("./assets/images/5G.png"),
+      logo: require("./assets/images/5G2.png"),
+
       subHeader: "기타 주요 프로젝트",
       duration: "2019년 - 현재",
       desc: "무선 망 구축, 최적화 및 단말기 시험 경험 다수",
