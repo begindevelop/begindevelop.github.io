@@ -34,10 +34,11 @@
   margin: 0;
   font-size: 28px;
   font-weight: 700;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  height: 27px;
+  word-break: break-word; /* 긴 단어 줄바꿈 */
+  overflow-wrap: break-word; /* 긴 텍스트 줄바꿈 */
+  text-overflow: unset; /* 생략(...) 제거 */
+  white-space: normal; /* 줄바꿈 허용 */
+  height: auto; /* 높이를 자동으로 조정 */
 }
 
 .education-roundedimg {
@@ -131,4 +132,14 @@
     max-width: 80%;
     margin: auto;
   }
+}
+.subTitle {
+  color: #3b3b3b !important;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.subTitle.dark-mode {
+  color: $textColorDark !important;
 }

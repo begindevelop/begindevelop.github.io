@@ -55,9 +55,12 @@ const skillsSection = {
   title: "안녕하세요. 성실과 책임으로 성장하는 문현진입니다.",
   skills: [
     <>
-      {" "}
-      저는 6년간 무선 망 설계, 5G 프로토콜 분석, 성능 최적화 등 다양한
-      프로젝트를 수행하며 전문성을 쌓아왔습니다. <br />
+      저는 6년간 무선 망 설계, 5G 프로토콜 분석, 성능 최적화를 통해 다양한
+      네트워크 프로젝트를 수행하며 전문성을 쌓아왔습니다. <br />
+      특히, 5G와 LTE 설계, 최적화, 신호 처리 및 트러블슈팅 경험이 풍부합니다.{" "}
+      이러한 경험을 바탕으로 무선 망 설계뿐만 아니라 프로토콜 최적화, 성능 개선,
+      신호 분석 등 통신 전반적인 다양한 영역에서도 효율적이고 신뢰성 높은 결과를
+      도출할 수 있는 전문성을 보유하고 있습니다. <br /> <br />
       또한, 워드, 엑셀, 파워포인트, 포토샵, 프리미어 프로 등 다양한 도구를
       능숙하게 활용해 업무 효율성을 높이고 완성도 높은 결과물을 만들어냈습니다.{" "}
       <br />
@@ -65,7 +68,7 @@ const skillsSection = {
       React, HTML5, CSS 등 개발 기술을 포함한 다양한 역량을 꾸준히 계발하며
       스스로를 발전시켜 왔습니다. <br />
       어떠한 일을 맡더라도 책임감을 가지고 최선의 결과를 만들기 위해 노력하는
-      자세로, 새로운 환경에서도 성과를 창출하며 성장하는 인재가 되겠습니다.{" "}
+      자세로, 새로운 환경에서도 성과를 창출하며 성장하는 인재가 되겠습니다.
     </>
   ],
 
@@ -75,48 +78,88 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "Communication",
-      fontAwesomeClassname: "fas fa-satellite-dish"
+      fontAwesomeClassname: "fas fa-satellite-dish" // fas로 수정
     },
     {
-      skillName: "Wired Network",
-      fontAwesomeClassname: "fas fa-network-wired"
+      skillName: "5G Analysis",
+      fontAwesomeClassname: "fas fa-microchip" // fas로 수정
     },
     {
-      skillName: "Signal Strength",
-      fontAwesomeClassname: "fas fa-signal"
-    },
-    {
-      skillName: "Mobile Communication",
-      fontAwesomeClassname: "fas fa-mobile-alt"
+      skillName: "Device Testing",
+      fontAwesomeClassname: "fas fa-mobile" // fas로 수정
     },
     {
       skillName: "Wi-Fi",
-      fontAwesomeClassname: "fas fa-wifi"
+      fontAwesomeClassname: "fas fa-wifi" // fas로 수정
+    },
+    {
+      skillName: "Signal Analysis",
+      fontAwesomeClassname: "fas fa-signal" // fas로 수정
+    },
+    {
+      skillName: "Network Design",
+      fontAwesomeClassname: "fas fa-project-diagram" // fas로 수정
+    },
+    {
+      skillName: "Protocol Analysis",
+      fontAwesomeClassname: "fas fa-cogs" // fas로 수정
+    },
+    {
+      skillName: "Performance Analysis",
+      fontAwesomeClassname: "fas fa-chart-line" // fas로 수정
+    },
+    {
+      skillName: "Troubleshooting",
+      fontAwesomeClassname: "fas fa-tasks" // fas로 수정
+    },
+    {
+      skillName: "Word",
+      fontAwesomeClassname: "fas fa-file-alt" // 문서 작업 관련 아이콘
+    },
+    {
+      skillName: "PowerPoint",
+      fontAwesomeClassname: "fas fa-file-powerpoint" // 파워포인트 관련 아이콘
+    },
+    {
+      skillName: "Excel",
+      fontAwesomeClassname: "fas fa-file-excel" // 엑셀 관련 아이콘
     },
 
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Photoshop",
+      fontAwesomeClassname: "fas fa-image" // fab (정확함)
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Premiere Pro",
+      fontAwesomeClassname: "fas fa-film" // fas로 수정
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java" // fab (정확함)
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "Spring Boot",
+      fontAwesomeClassname: "fas fa-leaf" // fas로 수정
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Oracle SQL",
+      fontAwesomeClassname: "fas fa-database" // fas로 수정
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "ReactJS",
+      fontAwesomeClassname: "fab fa-react" // fab (정확함)
+    },
+    {
+      skillName: "HTML5",
+      fontAwesomeClassname: "fab fa-html5" // fab (정확함)
+    },
+    {
+      skillName: "CSS3",
+      fontAwesomeClassname: "fab fa-css3-alt" // fab (정확함)
+    },
+    {
+      skillName: "Computer Repair",
+      fontAwesomeClassname: "fas fa-tools" // 컴퓨터 수리 관련 아이콘
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -128,23 +171,54 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "무선 망 설계 및 최적화 경력",
+      logo: require("./assets/images/design.png"),
+      subHeader: "2019 - 2024년 (6년)",
+      desc: "무선 망 설계 프로그램(Ranplan)을 활용한 무선 망 설계",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "SK ONS (오송역 이음 5G) 망 설계 프로젝트 참여",
+        "SK TNS (올림픽체조경기장 5G, 의왕효성백운밸리 LTE 무선 망 설계) POC 참여",
+        "LG Uplus (마곡 M시그니처 5G) POC 참여",
+        "LG CNS (정부세종청사, 경희대학교 이음5G) 망 설계 프로젝트 참여",
+        "삼성 SDS (삼성SDS 빌딩, 한강공원 28GHz) 망 설계 및 검증 프로젝트 참여",
+        "HFR (대구테크노파크, 중앙해양중공업, 대공에코텍, 성균관대학교 이음5G) 망 설계 프로젝트 참여",
+        "KCA, ETRI, 한전KDN, 벨루션네트웍스 등 다수 업체 무선망 설계 및 검증 지원"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "5G 및 NB-IoT 통신 프로토콜 분석 경력",
+      logo: require("./assets/images/NetworkAnalyzer.png"),
+      subHeader: "2019년 - 2021년 (3년)",
+      desc: "무선 분석 계측기(WaveJudge)를 활용한 5G 및 NB-IoT 통신 프로토콜 분석 및 성능 최적화 프로젝트 수행",
+      descBullets: [
+        "삼성전자 SoC 사업팀 5G PHY(Physical Layer) 자원 관리 및 신호 처리 분석 프로젝트 참여",
+        "삼성전자 네트워크 사업부 개발 단말, 기지국 간 에러 트러블슈팅 및 성능 개선 프로젝트 참여",
+        "삼성전자 네트워크 사업부 NB-IoT 저전력 통신 최적화 및 네트워크 분석 프로젝트 참여",
+        "삼성전자 Modem S/W 개발그룹 5G 통신 프로토콜 최적화 및 트러블슈팅 프로젝트 참여"
+      ]
+    },
+    {
+      schoolName: "OTA 챔버 및 안테나 성능 측정 경력",
+      logo: require("./assets/images/Chamber.png"),
+      subHeader: "2022년 - 2024년 (4년)",
+      desc: "OTA 챔버 관련 업무 지원 및 안테나 성능 검증 및 분석",
+      descBullets: [
+        "삼성전자 안테나 개발그룹 802.11 a/b/g/n/ac/ax/6E 안테나 성능 측정 결과 검증 및 분석 지원",
+        "삼성전자 스마트폰 개발그룹 TRP/TIS 측정 결과 데이터 분석 및 최적화 방안 도출 지원",
+        "삼성전자 Connectivity 개발팀 상호 연동성 시험 결과 분석 및 문제 해결 방안 제시"
+      ]
+    },
+    {
+      schoolName: "추가 경력 및 프로젝트",
+      logo: require("./assets/images/5G.png"),
+      subHeader: "기타 주요 프로젝트",
+      duration: "2019년 - 현재",
+      desc: "무선 망 구축, 최적화 및 단말기 시험 경험 다수",
+      descBullets: [
+        "무선 망 구축 - 에스넷아이씨티 이음 5G 테스트베드 망 설계, 구축, 최적화 프로젝트 수행",
+        "무선 망 최적화 - ETRI 육군사관학교 훈련소 전파환경 측정 및 최적화 용역 주요 인력 참여",
+        "단말기 시험 경험 - 테스트 베드(TTA, GERI) 단말기 성능 시험 경험 다수"
+      ]
     }
   ]
 };
@@ -152,7 +226,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
